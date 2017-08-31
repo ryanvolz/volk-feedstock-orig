@@ -1,0 +1,81 @@
+{% set version = "1.3" %}
+
+package:
+  name: volk
+  version: {{ version }}
+
+source:
+  url: http://libvolk.org/releases/volk-{{ version }}.tar.gz
+  sha256: 90b69515d3cc6d76bbc589cec63d600b690bffe2e2938be2f895176f18f7e3af
+
+build:
+  number: 0
+  skip: True  # [win]
+  detect_binary_files_with_prefix: True
+
+requirements:
+  build:
+    - boost 1.64.*
+    - cheetah
+    - cmake >=2.6
+    #- doxygen
+    #- mako >=0.4.2  # for version after 1.3, replacing cheetah
+    - pkg-config
+    - python >=2.7,<3
+    #- six  # for version after 1.3, to enable python 3
+    - toolchain
+
+  run:
+    - boost 1.64.*
+    - cheetah
+    #- mako >=0.4.2  # for version after 1.3, replacing cheetah
+    - python >=2.7,<3
+    #- six  # for version after 1.3, to enable python 3
+
+test:
+  commands:
+    # verify CLI tools
+    {% set volk_cmds = [
+        "volk-config-info",
+        "volk_modtool",
+        "volk_profile",
+    ] %}
+    {% for each_cmd in volk_cmds %}
+    - command -v {{ each_cmd }}  # [unix]
+    {% endfor %}
+
+    # verify libraries
+    {% set volk_lib = "libvolk" %}
+    - test -f $PREFIX/lib/{{ volk_lib }}.dylib  # [osx]
+    - otool -L $PREFIX/lib/{{ volk_lib }}.dylib  # [osx]
+    - test -f $PREFIX/lib/{{ volk_lib }}.so  # [linux]
+
+  imports:
+    - volk_modtool
+
+about:
+  home: http://libvolk.org/
+  license: GPL-3.0
+  license_file: COPYING
+  summary: 'The Vector Optimized Library of Kernels'
+  description: |
+    VOLK is the Vector-Optimized Library of Kernels. It is a free library,
+    currently offered under the GPLv3, that contains kernels of hand-written
+    SIMD code for different mathematical operations. Since each SIMD
+    architecture can be very different and no compiler has yet come along to
+    handle vectorization properly or highly efficiently, VOLK approaches the
+    problem differently.
+
+    For each architecture or platform that a developer wishes to vectorize for,
+    a new proto-kernel is added to VOLK. At runtime, VOLK will select the
+    correct proto-kernel. In this way, the users of VOLK call a kernel for
+    performing the operation that is platform/architecture agnostic. This
+    allows us to write portable SIMD code that is optimized for a variety of
+    platforms.
+
+  doc_url: http://libvolk.org/doxygen/index.html
+  dev_url: https://github.com/gnuradio/volk
+
+extra:
+  recipe-maintainers:
+    - ryanvolz
