@@ -1,1 +1,14 @@
-[]
+channels:
+  sources:
+  - conda-forge
+  - defaults
+  targets:
+  - [ryanvolz, main]
+github:
+  user_or_org: ryanvolz
+travis:
+  secure:
+    BINSTAR_TOKEN: ErToA/UKxE37ot409HGtMP+E8wiwfCdTJFEisKO2HS5B08iE/pEwE4sQlEh9sCbkpBYhPMM015mNrWJhMNBxdmQwhFdiilgL1prFIFMVtZdBKJlx2FYraB2CWEhQixp+MRfWrEQ30phi5GKNAWHOdqKIxcMnDZljVVGqL3PFe2TzETjP8gdm12pDW5owQKQytjjnO5R7U8hT4PKLpWUsC97nzZK7z7ocnoAQgLCVfu8Hqd6FzW5MO29z0rSgI7/kSwt5XSj75Ir0CdD8lJuB52zg2Rsfuj2deJ/4nck21s/fPUA/i1EPtHpJp61gq7IeYii1hqxgX9IB7Z5kWWOzrr8H2fT+2uOBGSwVsLj1Mmz75n6u9+jNVFCrTYauMx+3IbhvPTApxbss5V1A/QkDrF4mDnAqgqcpQwwWGP68kwSpj7ha7gOwlx8GpGKq8Bh8DQV1wflHdBGQnhYyw5JPIXSedNR8JeBEXUfdc3uJGcXuLbMyY4y5YGdX2ihlEjJGQ3pWHQ+9gYUA6uPOkAGNwOmFI3urWKLgyz/kmEWsk6HUrkN3pDzCVcP1IVIAZW8vHO/82KuohOQqounXtgd82QhFHee9ZAfRWbZJsmFrcpKhFaOAXtESeHWtVXFyTbYSuvv3C+vSBhu1tuGJdzWgTFpNv0DZls6d3FAEYk2fMgc=
+appveyor:
+  secure:
+    BINSTAR_TOKEN: YRBUCxEtCawAWG6pOUMcpZRzCP9YYh4RCsm0JoqfUc48IikBjBYBNZJpTnszaSQw
