@@ -1,21 +1,24 @@
-{% set version = "1.3" %}
+{% set version = "1.3.1" %}
 
 package:
   name: volk
   version: {{ version }}
 
 source:
-  url: http://libvolk.org/releases/volk-{{ version }}.tar.gz
-  sha256: 90b69515d3cc6d76bbc589cec63d600b690bffe2e2938be2f895176f18f7e3af
+#  url: http://libvolk.org/releases/volk-{{ version }}.tar.gz
+  url: https://github.com/gnuradio/volk/archive/v{{ version }}.tar.gz
+  sha256: f054c389621da906da2b3da784c51cc385ff78416ffb9a54dafbf2172352140a
 
 build:
   number: 0
-  skip: True  # [win]
   detect_binary_files_with_prefix: True
+  features:
+    - vc9  # [win and py27]
+    - vc14  # [win and py>=35]
 
 requirements:
   build:
-    - boost 1.64.*
+    - boost 1.66.0
     - cheetah
     - cmake >=2.6
     #- doxygen
@@ -24,13 +27,17 @@ requirements:
     - python >=2.7,<3
     #- six  # for version after 1.3, to enable python 3
     - toolchain
+    - vc 9  # [win and py27]
+    - vc 14  # [win and py>=35]
 
   run:
-    - boost 1.64.*
+    - boost 1.66.0
     - cheetah
     #- mako >=0.4.2  # for version after 1.3, replacing cheetah
     - python >=2.7,<3
     #- six  # for version after 1.3, to enable python 3
+    - vc 9  # [win and py27]
+    - vc 14  # [win and py>=35]
 
 test:
   commands:

@@ -29,7 +29,7 @@ Current build status
 
 Linux: [![Circle CI](https://circleci.com/gh/ryanvolz/volk-feedstock.svg?style=shield)](https://circleci.com/gh/ryanvolz/volk-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/ryanvolz/volk-feedstock.svg?branch=master)](https://travis-ci.org/ryanvolz/volk-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/ryanvolz/volk-feedstock?svg=True)](https://ci.appveyor.com/project/ryanvolz/volk-feedstock/branch/master)
 
 Current release info
 ====================
