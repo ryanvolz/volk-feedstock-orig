@@ -15,5 +15,5 @@ cmake \
     -DENABLE_TESTING=ON \
     ..
 make -j${CPU_COUNT}
-make test
+ctest --output-on-failure
 make install
