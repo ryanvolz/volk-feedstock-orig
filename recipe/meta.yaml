@@ -10,7 +10,7 @@ source:
   sha256: f054c389621da906da2b3da784c51cc385ff78416ffb9a54dafbf2172352140a
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
   detect_binary_files_with_prefix: True
   features:
@@ -33,8 +33,6 @@ requirements:
 
   run:
     - boost 1.66.0
-    - cheetah
-    #- mako >=0.4.2  # for version after 1.3, replacing cheetah
     - python >=2.7,<3
     #- six  # for version after 1.3, to enable python 3
     - vc 9  # [win and py27]
