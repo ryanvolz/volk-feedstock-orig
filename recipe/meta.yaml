@@ -23,7 +23,7 @@ requirements:
     - cmake >=2.6
     #- doxygen
     #- mako >=0.4.2  # for version after 1.3, replacing cheetah
-    - pkg-config
+    - pkg-config  # [unix]
     - python >=2.7,<3
     #- six  # for version after 1.3, to enable python 3
     - toolchain
