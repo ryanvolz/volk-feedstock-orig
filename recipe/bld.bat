@@ -12,7 +12,7 @@ cmake -G "NMake Makefiles" ^
       -DCMAKE_BUILD_TYPE:STRING=Release ^
       -DENABLE_ORC:BOOL=OFF ^
       -DENABLE_PROFILING:BOOL=OFF ^
-      -DENABLE_TESTING:BOOL=OFF ^
+      -DENABLE_TESTING:BOOL=ON ^
       ..
 if errorlevel 1 exit 1
 
@@ -20,9 +20,9 @@ if errorlevel 1 exit 1
 cmake --build . --config Release
 if errorlevel 1 exit 1
 
-:::: test
-::cmake --build . --config Release --target test
-::if errorlevel 1 exit 1
+:: test
+cmake --build . --config Release --target test
+if errorlevel 1 exit 1
 
 :: install
 cmake --build . --config Release --target install
