@@ -54,7 +54,7 @@ test:
     - conda inspect objects -p $PREFIX volk  # [osx]
 
   imports:
-    - volk_modtool  # [py27]
+    - volk_modtool
 
 about:
   home: http://libvolk.org/
