@@ -4,4 +4,4 @@ cxx_compiler:  # [win]
 - vs2015  # [win]
 
 channel_targets:
-  - ryanvolz main
+  - ryanvolz prerelease
