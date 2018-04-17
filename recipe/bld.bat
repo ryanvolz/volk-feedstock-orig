@@ -17,13 +17,13 @@ cmake -G "NMake Makefiles" ^
 if errorlevel 1 exit 1
 
 :: build
-cmake --build . --config Release
+cmake --build .
 if errorlevel 1 exit 1
 
 :: test
-cmake --build . --config Release --target test
+ctest --output-on-failure
 ::if errorlevel 1 exit 1
 
 :: install
-cmake --build . --config Release --target install
+cmake --build . --target install
 if errorlevel 1 exit 1
