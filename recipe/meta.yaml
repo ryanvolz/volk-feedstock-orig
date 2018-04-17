@@ -30,6 +30,7 @@ requirements:
   run:
     - boost 1.66.0
     - python
+    - six
     - vc 14  # [win and py>=35]
 
 test:
