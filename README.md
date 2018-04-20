@@ -27,14 +27,16 @@ platforms.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/ryanvolz/volk-feedstock.svg?style=shield)](https://circleci.com/gh/ryanvolz/volk-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/ryanvolz/volk-feedstock.svg?branch=master)](https://travis-ci.org/ryanvolz/volk-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/ryanvolz/volk-feedstock?svg=True)](https://ci.appveyor.com/project/ryanvolz/volk-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/ryanvolz/volk-feedstock/master.svg?label=Linux)](https://circleci.com/gh/ryanvolz/volk-feedstock)
+[![OSX](https://img.shields.io/travis/ryanvolz/volk-feedstock/master.svg?label=macOS)](https://travis-ci.org/ryanvolz/volk-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/ryanvolz/volk-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/ryanvolz/volk-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/ryanvolz/volk/badges/version.svg)](https://anaconda.org/ryanvolz/volk)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/ryanvolz/volk/badges/downloads.svg)](https://anaconda.org/ryanvolz/volk)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-volk-green.svg)](https://anaconda.org/ryanvolz/volk) | [![Conda Downloads](https://img.shields.io/conda/dn/ryanvolz/volk.svg)](https://anaconda.org/ryanvolz/volk) | [![Conda Version](https://img.shields.io/conda/vn/ryanvolz/volk.svg)](https://anaconda.org/ryanvolz/volk) | [![Conda Platforms](https://img.shields.io/conda/pn/ryanvolz/volk.svg)](https://anaconda.org/ryanvolz/volk) |
 
 Installing volk
 ===============
