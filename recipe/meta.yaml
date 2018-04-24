@@ -10,9 +10,9 @@ source:
   sha256: 32131ba17846850c07270bc5897dd2de7130ec02ca029875a36966335120e7bf
 
 build:
-  number: 2
+  number: 3
   run_exports:
-    - {{ pin_subpackage('volk', max_pin='x.x') }}
+    - {{ pin_subpackage('volk', max_pin='x.x.x') }}
 
 requirements:
   build:
