@@ -4,9 +4,15 @@ channels:
   - [ryanvolz, main]
 github:
   user_or_org: ryanvolz
+provider:
+  linux: circle
+  osx: travis
+  win: appveyor
 travis:
   secure:
     BINSTAR_TOKEN: 12lnrysw/WSbw98zfokcEO6YGqQHfiv7l6TUmkKxOwPEtVUn7kQ+ryLtRC1Zevsz06iQHj6lbzxluEDmrjgTZzeFp6po9Nfo3NIqwjLhyhFE8QIIT4oa3K/N3FCwNMZvHUdc46PXB5xLF6ygXqXZldV44H6uOFQ1OYI3IFcOJzSRmF9evdyBa1a7wVSgQdKMt7xqjN56vwc18Qxk201vDYrIqf73UjmpAU6Pta+jNX4iNiv5FgA8TrgKAFsJGWdm1VTJIF9t71yCXTegRfC4nlR2IMBj4tFxeREnX1xBrGzuUkZgXofx+rC525QeljkupRWUR/nLg4VxC2jKcCNLgVSEAozHHZGlbbZuO+N8Jl+dDm0FPDu+RN6clPpPn4IMZXL+tz4/1ceFV1aI718C2L1eGyht2e2szUnUYlWN9Jd9D8wHokpU+qPTmqqEL6YcYSLGY3/T4YmS7QLBMc3IrUGTonJAFos7LG9drnRkKz5uH6fKjZ6Krtxgut2hh3NxLNtoUZO9/ZoZQCUfwCvU1JHOredfnLs/XIW4i+H6Aj79QMHGseNckl3tmqh0uVaP7y5zPJrxA6GHqqCuUj0K0XV+ZdQnNi6atJSz/kFn+8Z/skbGw/WOGsu+6LLcpP9+g37jCLSvsWO6Zmmtywxhf0v6DxaxPcQ4Ou/qAVerH8I=
 appveyor:
   secure:
     BINSTAR_TOKEN: 71TfwwHlSXL1lpYe3qfRuCAgxnXZkZw1a89oCIgAz4T+pKtbztMaAfWiC4oMSy2B
+azure:
+  user_or_org: rvolz
