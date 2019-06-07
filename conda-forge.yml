@@ -1,7 +1,5 @@
 channels:
-  sources:
-  - conda-forge
-  - defaults
+  # only used for README generation, see recipe/conda_build_config.yaml
   targets:
   - [ryanvolz, main]
 github:
