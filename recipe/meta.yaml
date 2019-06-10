@@ -1,4 +1,5 @@
-{% set version = "1.4" %}
+# 9 prefix in local version needed as hack to ensure proper ordering (after 0)
+{% set version = "1.4.1.dev3+9g3823a50" %}
 
 package:
   name: volk
@@ -6,11 +7,11 @@ package:
 
 source:
 #  url: http://libvolk.org/releases/volk-{{ version }}.tar.gz
-  url: https://github.com/gnuradio/volk/archive/v{{ version }}.tar.gz
-  sha256: 32131ba17846850c07270bc5897dd2de7130ec02ca029875a36966335120e7bf
+  git_url: https://github.com/ryanvolz/volk.git
+  git_rev: 3823a502cdbbec10cfcbab85541e651f77359fa4
 
 build:
-  number: 3
+  number: 0
   run_exports:
     - {{ pin_subpackage('volk', max_pin='x.x.x.x') }}
 
