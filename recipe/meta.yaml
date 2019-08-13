@@ -1,28 +1,26 @@
-{% set version = "1.4" %}
+{% set version = "2.0.0" %}
 
 package:
   name: volk
   version: {{ version }}
 
 source:
-#  url: http://libvolk.org/releases/volk-{{ version }}.tar.gz
-  url: https://github.com/gnuradio/volk/archive/v{{ version }}.tar.gz
-  sha256: 32131ba17846850c07270bc5897dd2de7130ec02ca029875a36966335120e7bf
+  url: https://github.com/gnuradio/volk/releases/download/v{{ version }}/volk-v{{ version }}.tar.gz
+  sha256: d4274c4cb07d634f4d5f94f4845fb54156ad45ee03f4cd045496b91967b21c30
 
 build:
-  number: 3
+  number: 0
   run_exports:
-    - {{ pin_subpackage('volk', max_pin='x.x.x.x') }}
+    - {{ pin_subpackage('volk', max_pin='x') }}
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - cmake >=2.6
+    - cmake >=2.8.12
     - jom  # [win]
 
   host:
-    - boost
     - boost-cpp
     #- doxygen
     - mako >=0.4.2
@@ -31,7 +29,6 @@ requirements:
     - six
 
   run:
-    - boost
     - boost-cpp
     - python
     - six
