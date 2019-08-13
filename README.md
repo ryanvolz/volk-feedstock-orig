@@ -28,28 +28,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>CircleCI</td>
-    <td>
-      <a href="https://circleci.com/gh/ryanvolz/volk-feedstock">
-        <img alt="Linux" src="https://img.shields.io/circleci/project/github/ryanvolz/volk-feedstock/master.svg?label=Linux">
-      </a>
-    </td>
-  </tr><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://travis-ci.org/ryanvolz/volk-feedstock">
-        <img alt="macOS" src="https://img.shields.io/travis/ryanvolz/volk-feedstock/master.svg?label=macOS">
-      </a>
-    </td>
-  </tr><tr>
-    <td>Appveyor</td>
-    <td>
-      <a href="https://ci.appveyor.com/project/ryanvolz/volk-feedstock/branch/master">
-        <img alt="windows" src="https://img.shields.io/appveyor/ci/ryanvolz/volk-feedstock/master.svg?label=Windows">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
