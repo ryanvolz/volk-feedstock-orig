@@ -1,5 +1,3 @@
-boost:
-- 1.70.0
 boost_cpp:
 - 1.70.0
 c_compiler:
@@ -11,8 +9,6 @@ channel_targets:
 cxx_compiler:
 - vs2015
 pin_run_as_build:
-  boost:
-    max_pin: x.x.x
   boost-cpp:
     max_pin: x.x.x
   python:
